@@ -15,8 +15,8 @@ namespace FloraCapstone2nd.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //base.OnConfiguring(optionsBuilder);
-            //optionsBuilder.UseMySql(ServerVersion.AutoDetect("Server=localhost;User=root;Password=root1234;Database=floradb;port=3306;"));
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseMySql("server=localhost;port=3306;database=floradb;user=root;password=root1234", ServerVersion.AutoDetect("server=localhost;port=3306;database=floradb;user=root;password=root1234"));
         }
         //put other database tables after this
 

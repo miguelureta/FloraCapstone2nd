@@ -12,7 +12,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
 {
-    options.UseMySql(ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(ServerVersion.AutoDetect("server=localhost;port=3306;database=floradb;user=root;password=root1234"));
 }
 );
 
