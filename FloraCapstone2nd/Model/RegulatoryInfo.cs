@@ -2,7 +2,7 @@
 {
     public class RegulatoryInfo
     {
-        public int RegulatoryID { get; set; }
+        public int RegulatoryId { get; set; }
         public int WarnID { get; set; }
         public int BanID { get; set; }
 

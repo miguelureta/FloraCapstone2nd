@@ -3,7 +3,6 @@ global using FloraCapstone2nd.Data;
 global using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +11,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
 {
-    options.UseMySql(ServerVersion.AutoDetect("server=localhost;port=3306;database=floradb;user=root;password=root1234"));
+    options.UseMySql(ServerVersion.AutoDetect("server=localhost;database=floradb;user=root;password=root1234"));
 }
 );
 

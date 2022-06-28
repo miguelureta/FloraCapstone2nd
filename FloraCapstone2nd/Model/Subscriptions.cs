@@ -2,9 +2,9 @@
 {
     public class Subscriptions
     {
-        public int SubscriptionID { get; set; }
-        public string SubscriptionType { get; set; }
-        public string Description { get; set; }
+        public int SubscriptionId { get; set; }
+        public string? SubscriptionType { get; set; }
+        public string? Description { get; set; }
         public DateTime SubscriptionLength { get; set; }
         public int SubscriptionPrice { get; set; }
         public char PaymentAccNum { get; set; }
