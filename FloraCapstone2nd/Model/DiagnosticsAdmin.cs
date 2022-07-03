@@ -1,7 +1,10 @@
-﻿namespace FloraCapstone2nd.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FloraCapstone2nd.Model
 {
     public class DiagnosticsAdmin
     {
+        [Key]
         public int DiagnosticsAdminId { get; set; }
         public string? Firstname { get; set; }
         public string? Lastname { get; set; }

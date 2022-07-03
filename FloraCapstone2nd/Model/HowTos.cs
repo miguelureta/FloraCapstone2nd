@@ -1,7 +1,10 @@
-﻿namespace FloraCapstone2nd.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FloraCapstone2nd.Model
 {
     public class HowTos
     {
+        [Key]
         public int HowTosId { get; set; }
         public int UserID { get; set; }
         public string? HowTosTitle { get; set; }

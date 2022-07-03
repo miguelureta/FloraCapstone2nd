@@ -1,7 +1,10 @@
-﻿namespace FloraCapstone2nd.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FloraCapstone2nd.Model
 {
     public class Experts
     {
+        [Key]
         public int ExpertId { get; set; }
         public string? UploadedProof { get; set; }
         public int RegulatoryID { get; set; }
