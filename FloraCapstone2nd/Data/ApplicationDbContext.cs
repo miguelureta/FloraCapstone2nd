@@ -16,7 +16,7 @@ namespace FloraCapstone2nd.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var conString = "server=localhost;database=floradb;user=root;password=root1234";
+            var conString = "server=localhost;database=floradb;user=roots;password=roots12345";
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseMySql(conString, ServerVersion.AutoDetect(conString));
         }
