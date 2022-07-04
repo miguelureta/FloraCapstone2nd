@@ -30,7 +30,6 @@ namespace FloraCapstone2nd.Data
 
 
         }
-        //put other database tables after this
 
         public DbSet<User> Users { get; set; }
         public DbSet<AccountsAdmin> accountsAdmins { get; set; }
