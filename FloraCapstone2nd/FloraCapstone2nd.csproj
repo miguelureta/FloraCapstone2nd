@@ -5,6 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Diagnose\Index.cshtml" />
+  </ItemGroup>
 	
   <ItemGroup>
     <PackageReference Include="FontAwesome" Version="4.7.0" />
@@ -20,6 +24,18 @@
   <ItemGroup>
     <Folder Include="Pages\Member\" />
     <Folder Include="Pages\Expert\" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Diagnose\Index.cshtml" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Diagnose\Index.cshtml" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Include="Pages\Diagnose\Index.cshtml" />
   </ItemGroup>
 
 </Project>
