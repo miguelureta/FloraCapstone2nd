@@ -1,11 +1,23 @@
 ﻿@page
-@model IndexModel
+@model FloraCapstone2nd.ViewModel.LoginViewModel
+
 @{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Login</h1>
+    <form asp-controller="Home" asp-action="Login" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
     
-
+        <label asp-for="AppUsername">Username:</label>
+        <input asp-for="AppUsername" class="form-control"/>
+        <span asp-validation-for="AppUsername" class="text-danger"></span>
+        <br/>
+        <label asp-for="AppPassword">Password:</label>
+        <input asp-for="AppPassword" class="form-control"/>
+        <span asp-validation-for="AppPassword" class="text-danger"></span>
+        <br/>
+        <input type="submit" value="Login" /> 
+    </form>
 </div>

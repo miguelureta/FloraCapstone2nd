@@ -13,5 +13,15 @@ namespace FloraCapstone2nd.Controllers
         {
             return View();
         }
+
+        public IActionResult Register()
+        {
+            return RedirectToAction("Register", "Account");
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }

@@ -2,11 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace FloraCapstone2nd.Data
 {
     //[DbConfigurationType(typeof(MySql.Data.EntityFramework.MySqlEFConfiguration, MySql.Data.EntityFramework))]
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
@@ -16,19 +17,19 @@ namespace FloraCapstone2nd.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+
             var conString = "server=localhost;database=floradb;user=root;password=root1234";
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseMySql(conString, ServerVersion.AutoDetect(conString));
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>().Property(p => p.Username).HasColumnType("nvarchar(50)");
-            modelBuilder.Entity<User>().Property(p => p.Password).HasColumnType("nvarchar(50)");
+
             modelBuilder.Entity<User>().Property(p => p.Email).HasColumnType("nvarchar(50)");
-
-
+            
         }
         //put other database tables after this
 
@@ -54,11 +55,10 @@ namespace FloraCapstone2nd.Data
         public DbSet<Plants> Plants { get; set; }
         public DbSet<RegulatoryInfo> regulatoryInfos { get; set; }
         public DbSet<Replies> Replies { get; set; }
-        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Roles> appRoles { get; set; }
         public DbSet<Statistics> statistics { get; set; }
         public DbSet<Subscriptions> Subscriptions { get; set; }
         public DbSet<Warns> Warns { get; set; }
-
     }  
     
 }

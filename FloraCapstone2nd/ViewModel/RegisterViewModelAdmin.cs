@@ -13,6 +13,7 @@ namespace FloraCapstone2nd.ViewModel
             Role = "";
             Section = "";
         }
+
         [Required]
         public string Username { get; set; }
         [Required]
