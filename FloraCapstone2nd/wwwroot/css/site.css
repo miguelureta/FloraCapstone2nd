@@ -1,61 +1,103 @@
-
-body {
-    background-color: white;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-@media (min-width: 991.98px) {
-    main {
-        padding-left: 240px;
-    }
-}
-
-
-.sidebar {
+.SideBar{
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0; 
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
-    z-index: 600;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: green;
+    top: 0px;
 }
 
-@media (max-width: 991.98px) {
-    .sidebar {
-        width: 100%;
-    }
-}
-
-.sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-#burger {
+.SideBar h1{
+    font-size: 23px;
     color: white;
+    text-align: center;
+    line-height: 72px;
+    background: green;
+    user-select: none;
 }
 
-#user {
+.SideBar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 68px;
+    font-size: 20px;
     color: white;
+    padding-left: 42px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(red, green, blue,.1);
+    border-bottom: 1px solid black;
+    transition: .5s;
+
 }
 
-p{
-    color:blueviolet;
+ul li:hover a{
+    padding-left: 60px;
 }
 
-h1{
-    color:blue;
+.SideBar ul a li{
+    margin-left: 18px;
 }
+
+#check{
+    display: none;
+
+}
+
+
+label #okbutton,label #cancelbutton{
+    position: absolute;
+    cursor: pointer;
+    background: green;
+}
+
+label #okbutton{
+    left: 42px;
+    top: 0px;
+    font-size: 36px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+
+}
+
+
+label #cancelbutton{
+    z-index: 1111;
+    left: -195px;
+    top: 0px;
+    font-size: 30px;
+    color: white;
+    padding: 5px 10px;
+    transition: all  .5s ease;
+}
+
+#check:checked ~ .SideBar{
+    left:0;
+}
+
+#check:checked ~ label #okbutton {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~label #cancelbutton{
+    left: 195px;
+}
+
+#check:checked ~section{
+    margin-left: 250px;
+}
+
+
 /*
 
 html {

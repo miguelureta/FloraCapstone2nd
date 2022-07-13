@@ -8,173 +8,41 @@
     <link rel="stylesheet" href="~/font-awesome/css/all.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/FloraCapstone2nd.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/bootstrap-icons/icons" />
    
 
 </head>
 <body>
-    <header>
 
- <nav id="sidebarMenu"  class="collapse d-lg-block sidebar collapse bg-white" >
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-
-
-           <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true">
-          <i class="fas fa-home me-3"></i><span>Home</span>
-        </a>
-        
-         <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true">
-          <i class="fas fa-stethoscope me-3"></i><span>Diagnose</span>
-        </a>
-        
-                 <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true">
-          <i class="fas fa-book me-3"></i><span>How To's</span>
-        </a>
-        
-                 <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true">
-          <i class="fas fa-users me-3"></i><span>About Us</span>
-        </a>
-        
-                 <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true">
-          <i class="fas fa-money-bill me-3"></i><span>Pricing</span>
-        </a>
-      
-           <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true"
-           data-mdb-toggle="collapse"
-           href="#collapseExample2"
-           aria-expanded="true"
-           aria-controls="collapseExample2"
-           >
-          <i class="fas fa-users-cog me-3"></i>
-             <span>Moderators</span>
-        </a>
-				
+        <input type="checkbox" id="check" />
+        <label for="check">
+            <i class="fa-solid fa-bars" id="okbutton"></i>
+            <i class="fa-solid fa-x" id="cancelbutton"></i>
    
-        <ul
-            id="collapseExample2"
-            class="collapse list-group list-group-flush"
-            >
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-        </ul>
- 
-
-
-           <a
-           class="list-group-item list-group-item-action py-2 ripple"
-           aria-current="true"
-           data-mdb-toggle="collapse"
-           href="#collapseExample2"
-           aria-expanded="true"
-           aria-controls="collapseExample2"
-           >
-          <i class="fas fa-user-tie me-3"></i><span>Admins</span>
-        </a>
-				
-        
-        <ul
-            id="collapseExample2"
-            class="collapse list-group list-group-flush"
-            >
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-          <li class="list-group-item py-1">
-            <a href="" class="text-reset">Link</a>
-          </li>
-        </ul>
-       
-      </div>
-    </div>
-  </nav>
-
-
-
-  <nav
-       id="main-navbar"
-       class="navbar navbar-expand-lg navbar-light bg-success fixed-top"
-       >
-  
-    <div class="container-fluid">
-   
-      <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#sidebarMenu"
-              aria-controls="sidebarMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              >
-        <i id="burger" class="fas fa-bars"></i>
-      </button>
-	
+        </label>
+        <div class="SideBar">
+            <h1>IkapaTigi</h1>
+            <ul>
+                <li><a class="navbar-brand" asp-area="" asp-page="/Index"> <i class="fa-solid fa-home"></i> Home </a> </li>
+                <li><a class="navbar-brand" asp-area="" asp-page="/Index"> <i class="fa-solid fa-stethoscope"></i> Diagnose </a> </li>
+                <li><a class="navbar-brand" asp-area="" asp-page="/Index"> <i class="fa-solid fa-book"></i> How To's </a> </li>
+                <li> <a class="navbar-brand" asp-area="" asp-page="/Index"> <i class="fa-solid fa-people-group"></i> About Us </a> </li>
+                <li> <a class="navbar-brand" asp-area="" asp-page="/Index"> <i class="fa-solid fa-tag"></i> Pricing </a> </li>
+            </ul>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <ul>
+                <li> <a class="navbar-brand" asp-area="" asp-page="/Index">  <i class="fa-solid fa-right-to-bracket"></i> Login </a> </li>
+                <li> <a class="navbar-brand" asp-area="" asp-page="/Index">  <i class="fa-solid fa-file-pen"></i> Register </a> </li>
     
-     
-   
-      <ul class="navbar-nav ms-auto d-flex flex-row">
-        
-        <li class="nav-item dropdown">
-          <a
-             class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
-             href="#"
-             id="navbarDropdownMenuLink"
-             role="button"
-             data-mdb-toggle="dropdown"
-             aria-expanded="false"
-             >
-           <i id="user" class="far fa-user-circle fa-lg"></i>
-            
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-              >
-            <li><a class="dropdown-item" href="#"><i class="fas fa-door-open me-3" ></i>Login</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fas fa-clipboard-list me-3"></i>Register</a></li>
-          </ul>
-        </li>
+            </ul>
 
         
-       
-       
-      </ul>
-    </div>
-   
-  </nav>
+        </div>
+    
 
 
-      
   
   <!--
+    <header>
        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-success border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Home</a>
@@ -202,11 +70,14 @@
             </div>
         </nav>
 
+
+        </header>
   -->
 
        
         
-    </header>
+   
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
