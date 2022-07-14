@@ -6,13 +6,16 @@ namespace FloraCapstone2nd.ViewModel
     {
         public LoginViewModel()
         {
-            AppUsername = "";
-            AppPassword = "";
+            Username = "";
+            Password = "";
+            ReturnUrl = "";
         }
         [Required]
-        public string AppUsername { get; set; }
+        public string Username { get; set; }
         [Required]
         [DataType(DataType.Password)]
-        public string AppPassword { get; set; }
+        public string Password { get; set; }
+
+        public string ReturnUrl { get; set; }
     }
 }

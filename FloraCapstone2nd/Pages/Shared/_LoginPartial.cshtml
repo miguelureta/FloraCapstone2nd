@@ -1,0 +1,21 @@
+﻿@if(User.Identity.IsAuthenticated)
+{
+    <div class="list-group-horizontal">
+        <span class="dropdown-toggle" type="button" id="dropdownMenuUser" data-bs-toggle="dropdown" aria-expanded="false">
+            @User.Identity.Name logged in
+        </span>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuUser">
+            <li>
+                <form asp-controller="Home" asp-action="SignOut" method="post">
+                    <input type="submit" class="dropdown-item" value="Sign Out"/>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <div>
+        Not Logged In
+    </div>
+}

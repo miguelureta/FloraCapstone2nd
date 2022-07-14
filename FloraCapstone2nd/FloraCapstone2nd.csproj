@@ -18,5 +18,13 @@
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
   </ItemGroup>
+	
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
 
 </Project>

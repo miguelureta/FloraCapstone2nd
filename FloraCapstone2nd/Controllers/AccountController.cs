@@ -11,13 +11,15 @@ namespace FloraCapstone2nd.Controllers
     {
         //private readonly IMapper mapper;
         private readonly ApplicationDbContext context;
+        private readonly SignInManager<User> signInManager;
         private readonly UserManager<User> userManager;
 
         //Take note of arrangement of parameters when constructing this controller
-        public AccountController(UserManager<User> userManager, IMapper mapper, ApplicationDbContext context)
+        public AccountController(UserManager<User> userManager, IMapper mapper, ApplicationDbContext context, SignInManager<User> signInManager)
         {
             //this.mapper = mapper;
             this.context = context;
+            this.signInManager = signInManager;
             this.userManager = userManager;
         }
 
