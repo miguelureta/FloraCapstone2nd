@@ -41,7 +41,7 @@
     <None Include="wwwroot\BackgroundImages\Image 6%401x.png" />
     <None Include="wwwroot\BackgroundImages\Image 7%401x.png" />
     <None Include="wwwroot\BackgroundImages\Image 8%401x.png" />
-    <None Include="wwwroot\BackgroundImages\Logo%401x.png" />
+    <None Include="wwwroot\BackgroundImages\Logo.png" />
   </ItemGroup>
 
 </Project>

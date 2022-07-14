@@ -13,6 +13,11 @@
 </head>
 <body>
 
+    
+    <div class="bg-container">
+
+
+
         <input type="checkbox" id="check" />
         <label for="check">
             <i class="fa-solid fa-bars" id="okbutton"></i>
@@ -37,7 +42,10 @@
 
         
         </div>
-    
+   
+        <div class="Logo">
+            <img src="~/BackgroundImages/Logo.png" />
+        </div>
 
 
   
@@ -78,19 +86,23 @@
         
    
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-<!--
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
 
-  <footer class="border-top footer text-muted">
+
+
+    </div>
+    
+
+  <footer class=" footer text-muted">
         <div class="container">
             &copy; 2022 - FloraCapstone2nd - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
--->
+
   
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
