@@ -119,6 +119,57 @@ html, body{
     align-items:center;
     background-repeat: no-repeat;
 }
+
+/*HOME PAGE is after this line.*/
+
+
+/*After this line are the codes for the title box background.*/
+.titlecontainer {
+    background-color: #f3ebd3;
+}
+
+/*After this line are the codes for the box Diagnose.*/
+.containerleftdiagnose {
+    background-color: green;
+    float: left;
+    padding: 10px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.textcontainerleftdiagnose{
+    padding-right: 20px;
+}
+.diagnoseicon {
+    background-image: url('../backgroundimages/diagnose.png');
+    padding: 10px;
+    flex-basis: 40%;
+    background-repeat: no-repeat;
+    max-width: 100%
+}
+
+/*After this line are the codes for the box How To's.*/
+.containerrighthowto {
+    background-color: red;
+    float: right;
+    padding: 10px;
+    
+   
+}
+
+/*After this line are the codes for the box About Us.*/
+.containerbottomaboutus {
+    background-color: blue;
+    position: absolute;
+    bottom: 200px;
+    
+}
+
+
+
 /*
 
 html {
