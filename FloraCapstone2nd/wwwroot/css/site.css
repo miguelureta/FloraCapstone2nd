@@ -130,45 +130,71 @@ html, body{
 
 /*After this line are the codes for the box Diagnose.*/
 .containerleftdiagnose {
-    background-color: green;
+    background-color: #f3ebd3;
     float: left;
     padding: 10px;
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .textcontainerleftdiagnose{
     padding-right: 20px;
 }
-.diagnoseicon {
-    background-image: url('../backgroundimages/diagnose.png');
+
+.diagnoseicon img{
+   width: 200px;
+   height: auto;
     padding: 10px;
     flex-basis: 40%;
     background-repeat: no-repeat;
-    max-width: 100%
+   
 }
 
 /*After this line are the codes for the box How To's.*/
 .containerrighthowto {
-    background-color: red;
+    background-color: #f3ebd3;
     float: right;
     padding: 10px;
-    
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textcontainerrighthowto {
+    padding-right: 20px;
+}
+
+.howtoicon img {
+    width: 195px;
+    height: auto;
+    padding: 10px;
+    flex-basis: 40%;
+    background-repeat: no-repeat;
 }
 
 /*After this line are the codes for the box About Us.*/
 .containerbottomaboutus {
-    background-color: blue;
+    background-color: #f3ebd3;
+    width: 1300px;
     position: absolute;
-    bottom: 200px;
-    
+    padding: 10px;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.textcontainerbottomaboutus {
+    padding-right: 20px;
+}
 
+.aboutusicon img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    flex-basis: 40%;
+    background-repeat: no-repeat;
+}
 
 /*
 
