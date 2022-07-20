@@ -1,1 +1,35 @@
-﻿
+﻿@model PlantDiseases
+
+<h3>Create A New Plant Disease Entry</h3>
+
+<a asp-controller="Diagnose" asp-action="Index" class="btn btn-primary">
+    Back
+</a>
+
+<form asp-controller="Diagnose" asp-action="Add" method="post">
+    <label asp-for="PlantDiseaseName"></label>
+    <input type="text" asp-for="PlantDiseaseName" class="form-control"/>
+    <br/>
+    <label asp-for="DiseaseSymptoms"></label>
+    <input type="text" asp-for="DiseaseSymptoms" class="form-control"/>
+    <br/>
+    <label asp-for="AffectedPart"></label>
+    <input type="text" asp-for="AffectedPart" class="form-control"/>
+    <br/>
+    <label asp-for="DiseaseDesc"></label>
+    <input type="text" asp-for="DiseaseDesc" class="form-control"/>
+    <br/>
+    <label asp-for="DiseaseCause"></label>
+    <input type="text" asp-for="DiseaseCause" class="form-control"/>
+    <br/>
+    <label asp-for="DiseaseCure"></label>
+    <input type="text" asp-for="DiseaseCure" class="form-control"/>
+    <br/>
+    <label asp-for="CurePriceAvg"></label>
+    <input type="text" asp-for="CurePriceAvg" class="form-control"/>
+    <br/>
+    <label asp-for="Media"></label>
+    <input type="image" asp-for="Media" class="form-control"/>
+    <br/>
+    <input type="submit" value="Add New Disease Entry" class="btn btn-primary" />
+</form>

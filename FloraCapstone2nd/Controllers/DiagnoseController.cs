@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using FloraCapstone2nd.Model;
+using FloraCapstone2nd.Data;
 
 namespace FloraCapstone2nd.Controllers
 {
@@ -11,7 +13,7 @@ namespace FloraCapstone2nd.Controllers
 
         public IActionResult Add()
         {
-            return View();
+            return View(new Diagnose());
         }
 
     }
