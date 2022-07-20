@@ -13,7 +13,7 @@ namespace FloraCapstone2nd.Controllers
 
         public IActionResult Add()
         {
-            return View(new Diagnose());
+            return View(new PlantDiseases());
         }
 
     }
