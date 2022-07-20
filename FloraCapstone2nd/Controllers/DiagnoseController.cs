@@ -8,5 +8,11 @@ namespace FloraCapstone2nd.Controllers
         {
             return View();
         }
+
+        public IActionResult Add()
+        {
+            return View();
+        }
+
     }
 }
