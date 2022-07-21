@@ -5,6 +5,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Expert\**" />
+    <Compile Remove="Pages\Member\**" />
+    <Content Remove="Pages\Expert\**" />
+    <Content Remove="Pages\Member\**" />
+    <EmbeddedResource Remove="Pages\Expert\**" />
+    <EmbeddedResource Remove="Pages\Member\**" />
+    <None Remove="Pages\Expert\**" />
+    <None Remove="Pages\Member\**" />
+  </ItemGroup>
 	
   <ItemGroup>
     <PackageReference Include="FontAwesome" Version="4.7.0" />
@@ -15,11 +26,6 @@
     <PackageReference Include="MySql.Data" Version="8.0.29" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
-  </ItemGroup>
-	
-  <ItemGroup>
-    <Folder Include="Pages\Member\" />
-    <Folder Include="Pages\Expert\" />
   </ItemGroup>
 	
   <ItemGroup>
